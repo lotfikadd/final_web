@@ -1,6 +1,7 @@
-import 'package:final_web/loginpage/loginpage.dart';
+import 'package:final_web/ui/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 
 class NavBar extends StatelessWidget {
   @override
@@ -64,6 +65,7 @@ class DesktopNavbar extends StatelessWidget {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
                   onPressed: (){
                     LoginPage();
+                  // botton of the top right
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 20.0),

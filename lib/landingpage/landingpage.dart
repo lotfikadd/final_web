@@ -1,4 +1,4 @@
-import 'package:final_web/loginpage/loginpage.dart';
+import 'package:final_web/ui/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -34,8 +34,11 @@ class LandingPage extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   ),
                   onPressed: (){
+                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
+                    // Navigator.pushNamed(context,'/logingpage');
                     LoginPage();
                     // Navigator.of(context).pushNamed('/logingpage');
+                    // botton of the bottom left
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 15.0,horizontal: 25.0),

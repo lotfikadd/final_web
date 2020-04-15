@@ -1,6 +1,6 @@
 import 'package:final_web/commons/collapsing_navigation_drawer_widget.dart';
 import 'package:final_web/landingpage/landingpage.dart';
-import 'package:final_web/loginpage/loginpage.dart';
+import 'package:final_web/ui/login_page.dart';
 import 'package:final_web/navbar/Navbar.dart';
 import 'package:final_web/style/theme_dashboard.dart';
 import 'package:flutter/material.dart';
@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       ),
       home: MyHomePage(),
       routes: <String, WidgetBuilder> {
-        '/home': (BuildContext context)=> MyHomePage(),
-        '/logingpage': (BuildContext context)=> LoginPage(),
-        '/dashboard': (BuildContext context)=> MyDashboard(),
+        '/home': (context)=> MyHomePage(),
+        '/logingpage': (context)=> LoginPage(),
+        '/dashboard': (context)=> MyDashboard(),
       },
     
     );
